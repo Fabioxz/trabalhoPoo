@@ -22,4 +22,4 @@
 • Git e GitHub: Ferramentas usadas para o versionamento do código em grupo e hospedagem do repositório final.
 
 
-Autores: Fábio Feliphe de Freitas da Silva e Gabriely Silva de Abreu.
+Autores: Fábio Feliphe de Freitas da Silva, Gabriel Dias de Souza e Gabriely Silva de Abreu.
