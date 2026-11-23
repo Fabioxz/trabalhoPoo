@@ -1,4 +1,4 @@
-### Passo a passo do funcionamento do programa
+# Passo a passo do funcionamento do programa
 
 1. Início do programa: O sistema é iniciado e apresenta as informações iniciais da impressora.
 
