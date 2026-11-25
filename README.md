@@ -2,7 +2,7 @@
 
 ## 1. Sobre o Projeto
 
-Este projeto foi desenvolvido em Java e tem como objetivo realizar a comunicação e o controle de uma impressora por meio de uma biblioteca DLL. O sistema funciona por meio de um menu interativo no terminal, permitindo que o usuário selecione diferentes operações de impressão e controle da impressora.
+Este projeto foi desenvolvido na linguagem Java e tem como objetivo realizar a comunicação e o controle de uma impressora por meio de uma biblioteca DLL. O sistema funciona por meio de um menu interativo no terminal, permitindo que o usuário selecione diferentes operações de impressão e controle da impressora.
 
 ## 2. Tecnologias Utilizadas
 
