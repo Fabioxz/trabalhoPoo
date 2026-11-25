@@ -1,25 +1,64 @@
-# Passo a passo do funcionamento do programa
+# Projeto de Integração com Impressora
 
-1. Início do programa: O sistema é iniciado e apresenta as informações iniciais da impressora.
+## 1. Sobre o Projeto
 
-2. Entrada de dados: O usuário informa os dados necessários para utilizar o sistema, por meio do teclado.
+Este projeto foi desenvolvido em Java e tem como objetivo realizar a comunicação e o controle de uma impressora por meio de uma biblioteca DLL. O sistema funciona por meio de um menu interativo no terminal, permitindo que o usuário selecione diferentes operações de impressão e controle da impressora.
 
-3. Processamento: O programa recebe as informações e utiliza variáveis para armazenar os dados e realizar os cálculos ou verificações necessários.
+## 2. Tecnologias Utilizadas
 
-4. Execução das operações: Através de estruturas condicionais, o programa verifica as opções selecionadas pelo usuário e executa as operações correspondentes.
+- **Java:** linguagem utilizada no desenvolvimento do sistema.
+- **Scanner:** utilizado para receber informações digitadas pelo usuário no terminal.
+- **Biblioteca DLL da impressora:** responsável pela comunicação com o equipamento e pela execução dos comandos de impressão.
 
-5. Exibição dos resultados: Os resultados das operações são apresentados na tela, permitindo que o usuário acompanhe o funcionamento do sistema.
+## 3. Estrutura do Projeto
 
-6. Encerramento: Após a conclusão das operações, o programa é encerrado.
+O projeto é organizado principalmente nas seguintes classes:
 
-   TECNOLOGIAS:
+- **Menu.java:** responsável por exibir as opções disponíveis e direcionar a execução de cada funcionalidade.
+- **Impressora.java:** contém os métodos responsáveis pela configuração, conexão e execução dos comandos da impressora.
+- **ImpressoraDLL:** interface utilizada para acessar as funções disponibilizadas pela biblioteca da impressora.
 
-• Java: Linguagem de programação usada para estruturar o sistema orientado a objetos, o login, o menu no console e o tratamento de exceções.
-• JNA (jna-5.15.0.jar): Biblioteca Java que faz a ponte entre o código Java e bibliotecas nativas do Windows (.dll).
-• DLL E1 Impressora (.dll x86/x64): Biblioteca nativa fornecida pela fabricante Elgin com os comandos de hardware para operar as impressoras térmicas i8 e i9.
-• XML: Formato estruturado usado nos arquivos de exemplo (XMLSAT.xml e CANC_SAT.xml) para representar e imprimir cupons fiscais.
-• IntelliJ IDEA: Ambiente de desenvolvimento integrado (IDE) utilizado para configurar as dependências e compilar o projeto.
-• Git e GitHub: Ferramentas usadas para o versionamento do código em grupo e hospedagem do repositório final.
+## 4. Como Executar
 
+1. Certifique-se de que o Java esteja instalado no computador.
+2. Disponibilize a biblioteca DLL necessária para a comunicação com a impressora.
+3. Abra o projeto em uma IDE compatível com Java.
+4. Verifique se a biblioteca está corretamente configurada no projeto.
+5. Execute a classe principal que contém o menu do sistema.
+6. Utilize as opções apresentadas no terminal para realizar as operações.
 
-Autores: Fábio Feliphe de Freitas da Silva, Gabriel Dias de Souza e Gabriely Silva de Abreu.
+**Observação:** a comunicação com a impressora depende da disponibilidade e da configuração correta da DLL fornecida pelo fabricante.
+
+## 5. Login de Teste
+
+O sistema não possui autenticação de usuários. Portanto, não é necessário realizar login para acessar suas funcionalidades.
+
+## 6. Funcionalidades do Menu
+
+| Opção | Funcionalidade | Descrição |
+|---|---|---|
+| 1 | Configurar Conexão | Recebe os dados necessários para configurar a comunicação com a impressora. |
+| 2 | Abrir Conexão | Inicia a comunicação com a impressora. |
+| 3 | Impressão de Código de Barras | Envia um código de barras para impressão. |
+| 4 | Impressão de QR Code | Solicita os dados e realiza a impressão de um QR Code. |
+| 5 | Sinal Sonoro | Aciona o sinal sonoro da impressora. |
+| 6 | Impressão de Texto | Solicita um texto ao usuário e envia para impressão. |
+| 7 | Impressão de XML SAT | Realiza a impressão de um arquivo XML SAT. |
+| 8 | Impressão de XML de Cancelamento SAT | Realiza a impressão de um XML de cancelamento SAT. |
+| 9 | Posição de Impressão Horizontal | Permite configurar a posição horizontal de impressão. |
+| 10 | Fechar Conexão | Encerra a comunicação com a impressora. |
+| 0 | Sair | Encerra a execução do programa. |
+
+## 7. Testes Realizados
+
+O desenvolvimento contempla a implementação dos métodos de comunicação e impressão, além do tratamento de exceções para identificar possíveis erros durante a execução.
+
+Foram implementadas verificações do retorno das operações de abertura e fechamento da conexão, permitindo identificar se essas ações foram executadas corretamente.
+
+**Observação:** os testes de funcionamento físico da impressora devem ser registrados conforme as operações efetivamente realizadas no equipamento.
+
+## 8. Autores
+
+- Fábio Feliphe de Freitas da Silva
+- Gabriel Dias de Sousa
+- Gabriely Silva de Abreu
